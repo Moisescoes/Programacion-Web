@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: #f39c12;
+        }
+
+        label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"] {
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .radio-group {
+            display: flex;
+            gap: 15px;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            padding: 10px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h2>Formulario de Datos Personales</h2>
+    <form action="#" method="post">
+        <!-- Datos Personales -->
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" required>
+
+        <label for="apellido_paterno">Apellido Paterno:</label>
+        <input type="text" id="apellido_paterno" name="apellido_paterno" required>
+
+        <label for="apellido_materno">Apellido Materno:</label>
+        <input type="text" id="apellido_materno" name="apellido_materno" required>
+
+        <label for="pais">País:</label>
+        <select id="pais" name="pais" required>
+            <option value="mexico">México</option>
+            <option value="rusia">Rusia</option>
+            <option value="brazil">Brazil</option>
+            <option value="espana">España</option>
+            <option value="argentina">Argentina</option>
+
+        </select>
+
+        <label for="estado">Estado:</label>
+        <select id="estado" name="estado" required>
+            <option value="cdmx">Ciudad de México</option>
+            <option value="jalisco">Jalisco</option>
+            <option value="morelos">Morelos</option>
+            <option value="pachuca">Pachuca</option>
+            <option value="nuevo_leon">Nuevo León</option>
+        </select>
+
+        <label for="municipio">Municipio:</label>
+        <select id="municipio" name="municipio" required>
+            <option value="municipio1">Cuernavaca</option>
+            <option value="municipio2">Tepoztlán</option>
+            <option value="municipio3">Yautepec</option>
+            <option value="municipio4">Yecapixtla</option>
+        </select>
+
+        <label for="sexo">Sexo:</label>
+        <select id="sexo" name="sexo" required>
+            <option value="masculino">Masculino</option>
+            <option value="femenino">Femenino</option>
+            <option value="nobinario">No Binario</option>
+            <option value="norespo">Prefiero no responder</option>
+        </select>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name="direccion" required>
+
+        <label>Disponibilidad para viajar:</label>
+        <div class="radio-group">
+            <input type="radio" id="viajar_si" name="viajar" value="si" required>
+            <label for="viajar_si">Sí</label>
+            <input type="radio" id="viajar_no" name="viajar" value="no" required>
+            <label for="viajar_no">No</label>
+        </div>
+
+        <label>¿Te gusta programar?</label>
+        <div class="radio-group">
+            <input type="radio" id="programar_si" name="programar" value="si" required>
+            <label for="programar_si">Sí</label>
+            <input type="radio" id="programar_no" name="programar" value="no" required>
+            <label for="programar_no">No</label>
+        </div>
+
+        <!-- Generación de Usuario -->
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label for="confirm_password">Repetir Contraseña:</label>
+        <input type="password" id="confirm_password" name="confirm_password" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
+
+
+
+
